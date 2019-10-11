@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 圆角按钮定义 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item >
+        <shape android:shape="rectangle" >
+            <!-- android:drawable="@android:color/transparent" -->
+            <!-- stroke:线框 width 线框宽度 -->
+            <stroke
+                android:width="2dp"
+                android:color="@color/blue_0E2" >
+            </stroke>
+
+            <!-- 按钮内部透明 -->
+            <solid android:color="@color/blue_0E2" />
+
+            <!--  在按钮内部，字的前后左右与边框之间的距离 -->
+            <padding
+                android:bottom="12dp"
+                android:top="12dp"
+                android:left="10dp"
+                android:right="10dp" />
+
+            <!-- 按钮上下左右圆角的度数 -->
+            <corners
+                android:bottomLeftRadius="@dimen/dp_48"
+                android:bottomRightRadius="@dimen/dp_48"
+                android:topLeftRadius="@dimen/dp_48"
+                android:topRightRadius="@dimen/dp_48" />
+
+        </shape>
+    </item>
+
+</selector>
